@@ -1,0 +1,71 @@
+[{
+		
+		"productName": "Dell Studio",
+		
+		"originalPrice": 1000,
+		"offer": {
+			"offerPrice": 900,
+			"offerValid": "31082018"
+		},
+		"images": [
+			"image1.jpeg",
+			"image1.jpeg"
+		]
+	},
+	{
+		"productId": "1002",
+		"productName": "Dell inspiron",
+		"brand": "Dell",
+		"originalPrice": 9000,
+		"offer": {
+			"offerPrice": 800,
+			"offerValid": "31082018"
+		},
+		"images": [
+			"image3.jpeg",
+			"image4.jpeg"
+		]
+	},
+	{
+		"productId": "2001",
+		"productName": "HP Pavilion",
+		"brand": "HP",
+		"originalPrice": 1100,
+		"offer": {
+			"offerPrice": 1000,
+			"offerValid": "31082018"
+		},
+		"images": [
+			"image5.jpeg",
+			"image6.jpeg"
+		]
+	},
+	{
+		"productId": "3001",
+		"productName": "Lenovo Thaink pad",
+		"brand": "Lenevo",
+		"originalPrice": 900,
+		"offer": {
+			"offerPrice": 900,
+			"offerValid": "31082018"
+		},
+		"images": [
+			"image7.jpeg",
+			"image8.jpeg"
+		]
+	},
+	{
+		"productId": "4001",
+		"productName": "Apple Mac",
+		"brand": "Apple",
+		"originalPrice": 1300,
+		"offer": {
+			"offerPrice": 1200,
+			"offerValid": "31082018"
+		},
+		"images": [
+			"image9.jpeg",
+			"image10.jpeg"
+		]
+	}
+]

@@ -1,0 +1,11 @@
+{
+"productId":1001,
+"productDesc":"Dell Studio",
+"brand":"Dell",
+"originalPrice":1000,
+	"offer":{
+		
+		"offerPrice":900,
+		"offerValid":"31-Aug-2018"
+	}
+}

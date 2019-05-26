@@ -1,0 +1,47 @@
+
+
+		[{
+				"productId": 1001,	
+				"productDesc": "Dell studio",
+				"brand": "Dell",
+				"originalPrice": 1000,
+				"offer": {
+					"offerPrice": 900,
+					"offerValid": "31-Aug-2018"
+				},
+				"images": [
+					"image1.jpeg",
+					"image2.jpeg"
+				]
+
+			},
+			{
+				"productId": 2001,
+				"productDesc": "HP Pavlion",
+				"brand": "HP",
+				"originalPrice": 11000,
+				"offer": {
+					"offerPrice": 1000,
+					"offerValid": "31-Aug-2018"
+				},
+				"images": [
+					"image3.jpeg",
+					"image4.jpeg"
+				]
+			},
+			{
+				"productId": 3001,
+				"productDesc": "Mac laptop",
+				"brand": "Apple",
+				"originalPrice": 900,
+				"offer": {
+					"offerPrice": 1000,
+					"offerValid": "31-Aug-2018"
+				},
+				"images": [
+					"image5.jpeg",
+					"image6.jpeg"
+				]
+			}
+		]
+

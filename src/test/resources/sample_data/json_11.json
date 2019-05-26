@@ -1,0 +1,25 @@
+[{
+		"productId": "1001",
+		"productName": "Dell Studio",
+		"brand": "Dell",
+		"originalPrice": 1000
+	},
+	{
+		"productId": "1002",
+		"productName": "Dell inspiron",
+		"brand": "Dell",
+		"originalPrice": 9000
+	},
+	{
+		"productId": "2001",
+		"productName": "HP Pavilion",
+		"brand": "HP",
+		"originalPrice": 1100
+	},
+	{
+		"productId": "3001",
+		"productName": "Lenovo Thaink pad",
+		"brand": "Lenevo",
+		"originalPrice": 900
+	}
+]

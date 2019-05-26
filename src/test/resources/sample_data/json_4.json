@@ -1,0 +1,22 @@
+{
+
+	"data_fields": [{
+			"name": "money_movement_type",
+			"type": "string",
+			"current_value": "internal_account",
+			"previous_value": "internal_account"
+		},
+		{
+			"name": "money_movement_subtype",
+			"type": "string",
+			"current_value": "funds_transfer",
+			"previous_value": "funds_transfer"
+		},
+		{
+			"name": "model_identifier",
+			"type": "string",
+			"current_value": "",
+			"previous_value": "ODdjfoiee2oiVNVEi53w5UTR"
+		}
+	]
+}

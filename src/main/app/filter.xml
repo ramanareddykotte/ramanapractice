@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd">
+    <flow name="filterFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/filter1" doc:name="HTTP"/>
+        <dw:transform-message doc:name="Transform Message">
+            <dw:input-payload doc:sample="sample_data\json_13.json"/>
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/xml skipNullOn="everywhere"
+---
+
+products:{
+	
+	
+		((payload map (prod,indexOfProd) -> {
+		product:{
+			pid:prod.productId,
+			prodDesc:prod.productDesc,
+			pBrand:prod.brand,
+			pOrigPrice:prod.originalPrice
+		
+		} 
+		
+	}) filter $.product.pBrand== inboundProperties.'http.query.params'.brand
+	
+	)
+	
+	
+	
+	
+}	
+	
+	
+]]></dw:set-payload>
+        </dw:transform-message>
+    </flow>
+</mule>
